@@ -1,0 +1,32 @@
+@model IEnumerable<ComputerStore.Models.Debit>
+
+@{
+    ViewData["Title"] = "Журнал списаний";
+}
+
+<h1 class="text-danger">Журнал списаний</h1>
+<p class="text-muted">История корректировок остатков</p>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Дата</th>
+            <th>Товар</th>
+            <th>Количество</th>
+            <th>Причина</th>
+            <th>Списал</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Date.ToString("g")</td>
+                <td>@item.Product?.Name</td>
+                <td class="text-danger fw-bold">-@item.Quantity</td>
+                <td>@item.Reason</td>
+                <td>@item.User?.Login</td>
+            </tr>
+        }
+    </tbody>
+</table>

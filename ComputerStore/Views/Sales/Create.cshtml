@@ -1,0 +1,17 @@
+@model ComputerStore.Models.Sale
+
+@{ ViewData["Title"] = "Новый чек"; }
+
+<h1>Новая продажа</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <div class="alert alert-info">
+            Будет создан новый чек от имени текущего кассира (Admin).
+        </div>
+        <form asp-action="Create">
+            <input type="submit" value="Открыть чек" class="btn btn-lg btn-success" />
+            <a asp-action="Index" class="btn btn-secondary btn-lg">Отмена</a>
+        </form>
+    </div>
+</div>

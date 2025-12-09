@@ -1,0 +1,63 @@
+@model ComputerStore.Models.SalesReportViewModel
+
+@{ ViewData["Title"] = "Отчет: Продажи"; }
+
+<h1 class="text-success">Отчет о продажах</h1>
+
+<div class="card my-4 bg-light">
+    <div class="card-body">
+        <form method="get" class="row g-3 align-items-end">
+            <div class="col-md-3">
+                <label class="form-label fw-bold">С даты:</label>
+                <input type="date" name="start" class="form-control" value="@Model.StartDate.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-bold">По дату:</label>
+                <input type="date" name="end" class="form-control" value="@Model.EndDate.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Показать</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model.Sales.Count == 0)
+{
+    <div class="alert alert-warning">За выбранный период продаж не найдено.</div>
+}
+else
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>№ Чека</th>
+                <th>Дата и Время</th>
+                <th>Продавец</th>
+                <th class="text-end">Сумма</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Sales)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Date.ToString("g")</td>
+                    <td>@item.User?.Login (@item.User?.Role)</td>
+                    <td class="text-end">@item.TotalAmount.ToString("C")</td>
+                    <td>
+                        <a asp-controller="Sales" asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Детали</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr class="table-success fw-bold fs-5">
+                <td colspan="3" class="text-end">ИТОГО ВЫРУЧКА:</td>
+                <td class="text-end">@Model.TotalRevenue.ToString("C")</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+}

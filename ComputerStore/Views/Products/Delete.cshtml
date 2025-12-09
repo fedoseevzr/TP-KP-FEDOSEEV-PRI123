@@ -1,0 +1,63 @@
+@model ComputerStore.Models.Product
+
+@{
+    ViewData["Title"] = "Удалить товар";
+}
+
+<h1>Удалить</h1>
+
+<h3>Вы уверены, что хотите удалить этот товар?</h3>
+
+@if (ViewData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @ViewData["ErrorMessage"]
+    </div>
+}
+
+<div>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Supplier)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Supplier.Name)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        
+        @* Скрываем кнопку удаления, если есть ошибка, чтобы не провоцировать пользователя *@
+        @if (ViewData["ErrorMessage"] == null)
+        {
+            <input type="submit" value="Удалить" class="btn btn-danger" /> <span>|</span>
+        }
+        
+        <a asp-action="Index" class="btn btn-secondary">Назад к списку</a>
+    </form>
+</div>

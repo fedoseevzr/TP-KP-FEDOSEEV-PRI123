@@ -1,0 +1,77 @@
+@model ComputerStore.Models.Sale
+
+@{ ViewData["Title"] = "Чек №" + Model.Id; }
+
+<div class="d-flex justify-content-between align-items-center">
+    <h1>Чек №@Model.Id</h1>
+    <h3>ИТОГО: <span class="badge bg-primary">@Model.TotalAmount.ToString("C")</span></h3>
+</div>
+
+<div class="alert alert-info py-2">
+    Продавец: <strong>@Model.User?.Login</strong> | Дата: @Model.Date
+</div>
+
+@if (ViewData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@ViewData["ErrorMessage"]</div>
+}
+
+<hr />
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="card border-success">
+            <div class="card-header bg-success text-white">Добавить в чек</div>
+            <div class="card-body">
+                <form asp-action="AddLineItem" method="post">
+                    <input type="hidden" name="saleId" value="@Model.Id" />
+                    
+                    <div class="mb-2">
+                        <label>Выберите товар (Поиск по Коду или Имени)</label>
+                        <select name="productId" class="form-control select2-search" asp-items="ViewBag.ProductId"></select>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label>Кол-во</label>
+                            <input type="number" name="quantity" class="form-control" value="1" min="1" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 text-uppercase fw-bold">Продать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <h4>Состав чека</h4>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Товар</th>
+                    <th>Кол-во</th>
+                    <th>Цена</th>
+                    <th>Сумма</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.SaleItems)
+                {
+                    <tr>
+                        <td>@item.Product.Name</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Price.ToString("C")</td>
+                        <td>@((item.Quantity * item.Price).ToString("C"))</td>
+                    </tr>
+                }
+                @if (!Model.SaleItems.Any())
+                {
+                    <tr><td colspan="4" class="text-center text-muted">Чек пуст</td></tr>
+                }
+            </tbody>
+        </table>
+        
+        <div class="text-end">
+            <a asp-action="Index" class="btn btn-primary">Завершить обслуживание</a>
+        </div>
+    </div>
+</div>
