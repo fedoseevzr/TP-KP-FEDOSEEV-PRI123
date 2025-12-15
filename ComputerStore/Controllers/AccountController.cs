@@ -31,7 +31,6 @@ namespace ComputerStore.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Ищем пользователя в БД
                 User user = await _context.Users
                     .FirstOrDefaultAsync(u => u.Login == model.Login && u.Password == model.Password);
 
@@ -46,7 +45,6 @@ namespace ComputerStore.Controllers
             return View(model);
         }
 
-        // Вспомогательный метод создания куки
         private async Task Authenticate(User user)
         {
             var claims = new List<Claim>

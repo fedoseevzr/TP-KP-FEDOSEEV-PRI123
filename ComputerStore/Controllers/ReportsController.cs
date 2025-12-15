@@ -22,7 +22,7 @@ namespace ComputerStore.Controllers
         // ОТЧЕТ ПО ОСТАТКАМ
         public async Task<IActionResult> Inventory()
         {
-            // Загружаем товары с категориями и поставщиками
+
             var products = await _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.Supplier)
@@ -39,7 +39,6 @@ namespace ComputerStore.Controllers
             var startDate = start ?? new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
             var endDate = end ?? DateTime.Now;
 
-            //Что-бы endDate захватил весь конец дня (23:59:59),мы берем начало следующего дня и используем строгое неравенство <
             var filterEndDate = endDate.Date.AddDays(1);
 
             var sales = await _context.Sales

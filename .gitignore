@@ -1,0 +1,17 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+# Package files
+*.nupkg
+*.snupkg
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+# Tooling
+.vs/
+.vscode/
+# Logs
+*.log
+# Test results
+TestResults/

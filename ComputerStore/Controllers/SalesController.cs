@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace ComputerStore.Controllers
 {
@@ -47,12 +48,13 @@ namespace ComputerStore.Controllers
             }
             else
             {
-                // Если вдруг ID не найден, отправляем на вход
+                // Если ID не найден, отправляем на вход
                 return RedirectToAction("Login", "Account");
             }
 
             if (ModelState.IsValid)
             {
+                sale.Date = System.DateTime.Now;
                 _context.Add(sale);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Details), new { id = sale.Id });
@@ -80,7 +82,7 @@ namespace ComputerStore.Controllers
                 .Select(p => new
                 {
                     Id = p.Id,
-                    Text = $"[{p.Code}] {p.Name} ({p.Price} руб.)"
+                    Text = $"[{p.Code}] {p.Name} ({p.Price} руб.) (Ост: {p.Quantity})"
                 })
                 .ToListAsync();
 
@@ -100,10 +102,12 @@ namespace ComputerStore.Controllers
                 return RedirectToAction(nameof(Details), new { id = saleId });
             }
 
-            var sale = await _context.Sales.FindAsync(saleId);
-            var product = await _context.Products.FindAsync(productId);
+            var sale = await _context.Sales.Where(s => s.Id == saleId).FirstOrDefaultAsync();
+            var product = await _context.Products.Where(p => p.Id == productId).FirstOrDefaultAsync();
 
-            if (sale == null || product == null) return NotFound();
+            if (product == null) return NotFound();
+
+            if (sale == null) return NotFound();
 
             if (product.Quantity < quantity)
             {

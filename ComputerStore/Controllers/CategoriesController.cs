@@ -22,7 +22,6 @@ namespace ComputerStore.Controllers
         // Показывает список всех категорий
         public async Task<IActionResult> Index()
         {
-            // Получаем список категорий из БД
             var categories = await _context.Categories.ToListAsync();
             return View(categories);
         }
@@ -44,9 +43,9 @@ namespace ComputerStore.Controllers
             {
                 _context.Add(category);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index)); // Перенаправляем на список
+                return RedirectToAction(nameof(Index)); 
             }
-            return View(category); // Если ошибка, возвращаем форму
+            return View(category); 
         }
 
         // GET: /Categories/Edit/5

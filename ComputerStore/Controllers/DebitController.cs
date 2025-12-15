@@ -25,7 +25,7 @@ namespace ComputerStore.Controllers
         // Просмотр всех списаний
         public async Task<IActionResult> Index()
         {
-            // Загружаем связанные данные (Товар и Пользователь)
+            // Загружаем связанные данные 
             var debits = _context.Debits
                 .Include(d => d.Product)
                 .Include(d => d.User)

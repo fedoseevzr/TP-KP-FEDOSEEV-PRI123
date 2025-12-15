@@ -88,6 +88,7 @@ D:\Progi\TPKP\ComputerStore\obj\Debug\net8.0\ComputerStore.csproj.CoreCompileInp
 D:\Progi\TPKP\ComputerStore\obj\Debug\net8.0\ComputerStore.MvcApplicationPartsAssemblyInfo.cache
 D:\Progi\TPKP\ComputerStore\obj\Debug\net8.0\ComputerStore.RazorAssemblyInfo.cache
 D:\Progi\TPKP\ComputerStore\obj\Debug\net8.0\ComputerStore.RazorAssemblyInfo.cs
+D:\Progi\TPKP\ComputerStore\obj\Debug\net8.0\ComputerStore.sourcelink.json
 D:\Progi\TPKP\ComputerStore\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Progi\TPKP\ComputerStore\obj\Debug\net8.0\scopedcss\bundle\ComputerStore.styles.css
 D:\Progi\TPKP\ComputerStore\obj\Debug\net8.0\scopedcss\projectbundle\ComputerStore.bundle.scp.css

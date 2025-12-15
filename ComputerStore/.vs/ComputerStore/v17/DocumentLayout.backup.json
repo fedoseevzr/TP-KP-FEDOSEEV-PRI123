@@ -3,8 +3,47 @@
   "WorkspaceRootPath": "D:\\Progi\\TPKP\\ComputerStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C3875BCD-6580-4DD8-8681-7EB7B0073089}|..\\Tests\\Tests.csproj|d:\\progi\\tpkp\\tests\\allcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\models\\supplyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:models\\supplyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\controllers\\debitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:controllers\\debitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\controllers\\suppliescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:controllers\\suppliescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|d:\\progi\\tpkp\\computerstore\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B56AD146-115B-F7F3-6CEA-EF41C546826F}|ComputerStore.csproj|solutionrelative:controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +53,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
+              "Title": "SuppliesController.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\SuppliesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SuppliesController.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\SuppliesController.cs",
+              "RelativeToolTip": "Controllers\\SuppliesController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAmwFUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:09:03.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SuppliersController.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\SuppliersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SuppliersController.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\SuppliersController.cs",
+              "RelativeToolTip": "Controllers\\SuppliersController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:08:19.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportsController.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:08:19.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T21:06:49.275Z",
+              "WhenOpened": "2025-12-15T09:08:19.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DebitController.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\DebitController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DebitController.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\DebitController.cs",
+              "RelativeToolTip": "Controllers\\DebitController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwG8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:08:19.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwC0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:08:18.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T09:08:18.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T06:18:58.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SupplyItem.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Models\\SupplyItem.cs",
+              "RelativeDocumentMoniker": "Models\\SupplyItem.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Models\\SupplyItem.cs",
+              "RelativeToolTip": "Models\\SupplyItem.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T06:13:13.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AllControllerTests.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\Tests\\AllControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\Tests\\AllControllerTests.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\Tests\\AllControllerTests.cs",
+              "RelativeToolTip": "..\\Tests\\AllControllerTests.cs",
+              "ViewState": "AgIAAJ8BAAAAAAAAAAAAAHAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:48:14.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SalesController.cs",
+              "DocumentMoniker": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\SalesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SalesController.cs",
+              "ToolTip": "D:\\Progi\\TPKP\\ComputerStore\\Controllers\\SalesController.cs",
+              "RelativeToolTip": "Controllers\\SalesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T06:39:01.179Z",
               "EditorCaption": ""
             }
           ]
